@@ -16,6 +16,11 @@ To start the local Webpack Dev Server (usually on port `8080`):
 ```bash
 yarn start
 ```
+In case of "invalid host/origin header" error occurs when you inspect:
+
+```bash
+yarn start --disable-host-check
+```
 
 To lint all JavaScript files in the `src` folder:
 
