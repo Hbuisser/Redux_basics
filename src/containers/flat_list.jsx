@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
 import Flat from '../Components/flat';
+import { bindActionCreators } from 'redux';
+import { setFlats } from '../actions';
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    { setFlats: setFlats },
+    dispatch
+  );
+}
 
 class FlatList extends Component {
   static defaultProps = {
